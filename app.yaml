@@ -1,0 +1,10 @@
+application: yqltables
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: .*
+  script: main.py
+- url: /xml/(.*\.(gif|png|jpg|xml))
+  static_dir: opentables
